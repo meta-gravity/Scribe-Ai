@@ -32,12 +32,12 @@ const Navbar = () => {
                             </Link>
                             <LoginLink 
                             className={buttonVariants({
-                                variant: "ghost",
+                                variant: "outline",
                                 size: "sm"
                             })}>
                                 Sign in
                             </LoginLink>
-                            <RegisterLink 
+                            <RegisterLink
                             className={buttonVariants({
                                 size: "sm"
                             })}>

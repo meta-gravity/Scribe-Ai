@@ -14,12 +14,12 @@ export default function Home() {
         </p>
       </div>
       <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
-          Write your 
+          Create Engaging
           <span className='text-blue-600'> Newsletter </span>
-          in seconds
+          in Seconds
       </h1>
       <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-        Newsly enables you to write blogs and newsletter in any style you want just by asking.
+        Our AI-powered newsletter tool simplifies the process of creating Newsletter, saving you time and effort
       </p>
 
       <Link className={buttonVariants({
