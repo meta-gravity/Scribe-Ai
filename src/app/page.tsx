@@ -23,12 +23,19 @@ export default function Home() {
       </p>
 
       <Link className={buttonVariants({
-        className: "mt-5",
+        className: "mt-5 bg-gradient-to-r blur-20 from-red-400 to-blue-500 rounded-lg transition duration-1000 hover:duration-200 animate-tilt ",
         size: 'lg',
       }
       )} href="/dashboard" target='_black'>
         Get started <ArrowRight className='ml-5 h-5 w-5'/>
       </Link>
+
+    {/* <div className="relative group">
+      <div className="">
+        <div className="">Hover over me</div>
+      </div>
+    </div> */}
+
     </MaxWidthWrapper>
 
     {/* values only */}
@@ -109,7 +116,7 @@ export default function Home() {
             <span className='text-sm font-medium text-blue-600'>Step 3</span>
             <span className='text-lg font-semibold'>Start generating</span>
             <span className='mt-2 text-zinc-500'>It&apos;s that simple. Try {''} <Link href='/' className='font-medium hover:text-blue-700 hover:underline underline-offset-2'>Newsly</Link> {' '} today -
-            it really take&apols;s less than a minute.
+            it really take&apos;s less than a minute.
             </span>
           </div>
         </li>
@@ -130,6 +137,7 @@ export default function Home() {
           </div>
         </div>
     </div>
+
 
     </>
   )
