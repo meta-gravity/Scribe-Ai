@@ -10,21 +10,24 @@ const Page = () => {
   const searchParams = useSearchParams()
   const origin = searchParams.get('origin')
 
-  trpc.authCallback.useQuery(undefined, {
+  trpc.authCallback.useQuery(
+    undefined, 
+    {
     onSuccess: ({ success }) => {
-      if (success ) {
-        // user is synced to db
-        router.push(origin ? `/${origin}` : '/dashboard')
+      console.log('Auth callback success:', success);
+      if (success) {
+        router.push(origin ? `/${origin}` : '/dashboard');
       }
     },
     onError: (err) => {
+      console.error('Auth callback error:', err);
       if (err.data?.code === 'UNAUTHORIZED') {
-        router.push('/sign-in')
+        router.push('/sign-in');
       }
     },
     retry: true,
     retryDelay: 500,
-  })
+  });  
 
   return (
     <div className='w-full mt-24 flex justify-center'>
@@ -40,3 +43,4 @@ const Page = () => {
 }
 
 export default Page
+// why is it not working
