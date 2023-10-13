@@ -1,5 +1,8 @@
 # Scribe-Ai 
 
+![Sdcri](https://github.com/meta-gravity/Scribe-Ai/assets/108740247/1cd64752-2d86-4428-9b74-7db9704d9916)
+
+
 ## "Unleash Your Writing Potential with Scribe AI"
 
 ```
