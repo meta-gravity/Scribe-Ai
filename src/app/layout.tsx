@@ -27,15 +27,9 @@ export default function RootLayout({
           'min-h-screen font-sans antialiased grainy',
           inter.className
         )}>
-           <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          
           <Navbar />
           {children}
-          </ThemeProvider>
         </body>
       </Providers>
     </html>

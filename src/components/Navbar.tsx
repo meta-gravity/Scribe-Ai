@@ -12,7 +12,7 @@ const Navbar = () => {
             <MaxWidthWrapper>
                 <div className="flex items-center border-b h-14 justify-between border-zinc-200">
                     <Link href='/'>
-                        <span>
+                        <span >
                             Newsly.
                             {/* <span>
                                 Io

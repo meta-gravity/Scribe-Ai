@@ -1,5 +1,7 @@
+import Completion from "@/components/ai";
+
 export default function  Settings() {
     return (
-        <h1>settings</h1>
+        <Completion />
     )
 }

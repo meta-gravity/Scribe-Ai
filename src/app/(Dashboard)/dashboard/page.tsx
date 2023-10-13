@@ -1,5 +1,6 @@
 import Dashboard from '@/components/Dashboards'
 import SideBar from '@/components/SideBar'
+import Completion from '@/components/ai'
 import { db } from '@/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { redirect } from 'next/navigation'
@@ -18,7 +19,12 @@ const Page = async () => {
 
   if(!dbUser) redirect('/auth-callback?origin=dashboard')
 
-  return <SideBar />
+  return (
+    <div className='flex '>
+      <SideBar />
+      <Completion />
+    </div>
+  )
 
 
 }
