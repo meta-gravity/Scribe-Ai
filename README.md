@@ -1,5 +1,5 @@
 # Scribe-Ai 
-***
+
 ## "Unleash Your Writing Potential with Scribe AI"
 
 ```
