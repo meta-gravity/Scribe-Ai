@@ -13,11 +13,11 @@ const Navbar = () => {
     const user = getUser()
 
     return (
-        <nav className="sticky inset-x-0 h-14 top-0 w-full z-30 border-b border-zinc-200 bg-white/55 dark:border-gray-600 dark:bg-white/5 backdrop-blur-lg dark:backdrop-blur-lg transition-all">
+        <nav className="sticky inset-x-0 h-14 top-0 w-full z-30 border-b border-zinc-200 bg-white/55 dark:border-gray-800 dark:bg-white-300/75 backdrop-blur-lg dark:backdrop-blur-lg transition-all">
             <MaxWidthWrapper>
-                <div className="flex items-center border-b h-14 justify-between border-zinc-200  dark:border-gray-600">
+                <div className="flex items-center border-b h-14 justify-between border-zinc-200  dark:border-gray-800">
                     <Link href='/'>
-                        <span className="text-2xl text-semibold">
+                        <span className="text-2xl text-bold ">
                             Scribe 
                             <span className="text-primary">
                                  Ai

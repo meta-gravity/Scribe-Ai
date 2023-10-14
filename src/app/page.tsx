@@ -8,24 +8,26 @@ export default function Home() {
   return (
     <>
     <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
-      <div className='mx-auto mb-4 dark:border-gray-600 dark:bg-black hover:shadow-sm hover:shadow-purple-500/40 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50 cursor-pointer'>
+      <div className='mx-auto mb-4 dark:border-gray-600 dark:bg-black hover:shadow-lg hover:shadow-purple-500/20 shadow-blur 
+      flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 
+      shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50 cursor-pointer'>
         <p className='font-semibold text-sm text-gray-700 dark:text-white'>
           <Link href="https://x.com/Metagravity0/status/1708203253173727691?s=20">
-            Newsly is still in development 🏗️
+            <span className='hover:text-primary ease-in-out delay-150 duration-300'>Scribe</span> is still in development 🏗️
           </Link>
         </p>
       </div>
       <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
           Create Engaging
-          <span className='text-purple-600'> Newsletter </span>
+          <span className='text-primary'> Content </span>
           in Seconds
       </h1>
-      <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-        Our AI-powered newsletter tool simplifies the process of creating Newsletter, saving you time and effort
+      <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
+       Scribe AI is your solution. Our cutting-edge AI technology is designed to inspire, guide, and supercharge your writing<br/> Say goodbye to writer&apos;s block and hello to limitless🚀.
       </p>
 
       <Link className={buttonVariants({
-        className: "mt-5 bg-gradient-to-r blur-20 from-red-400 to-blue-500 rounded-lg transition duration-1000 hover:duration-200 animate-tilt ",
+        className: "mt-4 bg-gradient-to-tl rgb(129, 93, 231) via-purple-600 to-violet-700 hover:rounded-lg ease-in-out delay-150 duration-300 transition-property: all right-4",
         size: 'lg',
       }
       )} href="/dashboard" target='_black'>
