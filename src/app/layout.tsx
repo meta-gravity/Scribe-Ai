@@ -3,7 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { cn } from './lib/utils'
 import Navbar from '@/components/Navbar'
-import Providers from '@/components/Providers'
+import Providers from '@/components/Providers' 
+import Loglib from "@loglib/tracker/react";
 // import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,6 +30,12 @@ export default function RootLayout({
         )}>
           
           <Navbar />
+          <Loglib
+              config={{
+              id: "scribeaitest",
+              consent: "granted",
+            }}
+          />
           {children}
         </body>
       </Providers>
