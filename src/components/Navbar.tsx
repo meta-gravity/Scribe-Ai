@@ -13,43 +13,53 @@ const Navbar = () => {
     const user = getUser()
 
     return (
-        <nav className="sticky inset-x-0 h-14 top-0 w-full z-30 border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+        <nav className="sticky inset-x-0 h-14 top-0 w-full z-30 border-b border-zinc-200 bg-white/55 dark:border-gray-600 dark:bg-white/5 backdrop-blur-lg dark:backdrop-blur-lg transition-all">
             <MaxWidthWrapper>
-                <div className="flex items-center border-b h-14 justify-between border-zinc-200">
+                <div className="flex items-center border-b h-14 justify-between border-zinc-200  dark:border-gray-600">
                     <Link href='/'>
-                        <span >
+                        <span className="text-2xl text-semibold">
                             Scribe 
-                            <span className="bg-primary">
+                            <span className="text-primary">
                                  Ai
                             </span>
                         </span>
                     </Link>
 
 
+                    
+
+
 
                     <div className="hidden items-center space-x-4 sm:flex ">
                         <>
                             <Link href='/pricing' 
-                            className={buttonVariants({
+                                className={buttonVariants({
                                 variant: "ghost",
-                                size: "sm"
-                            })}>
+                                size: "sm",
+                                })}>
                                 Pricing
                             </Link>
 
-
-                            <div className="flex gap-4 items-center space-x-3">
+                            <div className="flex gap-4 items-center space-x-2">
                                 {!isAuthenticated() ? (
                                     <>
+                                        
                                         <LoginLink className={buttonVariants({
-                                            variant: "outline",
-                                            size: "sm"
+                                            variant: "outlinehover",
+                                            size: "sm",
+                                            // border: "ring"
+                                          
                                         })}>Sign in</LoginLink>
                                         <RegisterLink className={buttonVariants({
                                             variant: "default",
                                             size: "sm",
                                             border: "default"
-                                        })}>Sign up</RegisterLink>
+                                        })}
+                                        >Get started
+                                        </RegisterLink>
+
+
+                                         
                                     </>
                                 ) : (
                                     <div className="flex font-normal">
@@ -60,7 +70,7 @@ const Navbar = () => {
                                                 <Image
                                                 className="rounded-full"
                                                 src={user?.picture}
-                                                width={50}
+                                                width={45}
                                                 height={10}
                                                 alt="user profile avatar"
                                                 />
@@ -94,6 +104,11 @@ const Navbar = () => {
                                                         <span>Settings</span>
                                                         <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
                                                     </DropdownMenuItem>
+                                                    <DropdownMenuItem>
+                                                        <span className="mr-2 h-4 w-4">🎉</span>
+                                                        <span>What&apos;s New</span>
+                                                        {/* <DropdownMenuShortcut>h</DropdownMenuShortcut> */}
+                                                    </DropdownMenuItem>
                                                     <DropdownMenuItem className="hover:bg-red-200 hover:ring-red-300 hover:ring-1">
                                                         <LogOutIcon className="mr-2 h-4 w-4"/>
                                                         <span>
@@ -116,7 +131,12 @@ const Navbar = () => {
                                             <LogoutLink className="text-black">Log out</LogoutLink>
                                         </div> */}
                                     </div>
+
+
                                 )}
+                            </div>
+                            <div>
+                                <ModeToggle />
                             </div>
                             {/* <LoginLink 
                             className={buttonVariants({

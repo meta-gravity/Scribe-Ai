@@ -5,6 +5,7 @@ import { cn } from './lib/utils'
 import Navbar from '@/components/Navbar'
 import Providers from '@/components/Providers' 
 import Loglib from "@loglib/tracker/react";
+import { ThemeProvider } from '@/components/theme-provider'
 // import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,22 +22,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" 
-    className='light'>
+      className='dark'>
       <Providers>
         <body 
         className={cn(
-          'min-h-screen font-sans antialiased grainy',
+          'min-h-screen font-sans antialiased gradient',
           inter.className
         )}>
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+            
           
-          <Navbar />
-          <Loglib
-              config={{
-              id: "scribeaitest",
-              consent: "granted",
-            }}
-          />
-          {children}
+            <Navbar />
+              <Loglib
+                  config={{
+                    id: "scribeaitest",
+                    consent: "granted",
+                  }}
+                  />
+              {children}
+          </ThemeProvider>
         </body>
       </Providers>
     </html>
