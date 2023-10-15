@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Link href='/'>
                         <span className="text-2xl text-bold ">
                             Scribe 
-                            <span className="text-primary">
+                            <span className="text-primary text-bold">
                                  Ai
                             </span>
                         </span>

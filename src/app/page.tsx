@@ -13,7 +13,7 @@ export default function Home() {
       shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50 cursor-pointer'>
         <p className='font-semibold text-sm text-gray-700 dark:text-white'>
           <Link href="https://x.com/Metagravity0/status/1708203253173727691?s=20">
-            <span className='hover:text-primary ease-in-out delay-150 duration-300'>Scribe</span> is still in development 🏗️
+            <span className='hover:text-primary ease-in-out delay-150 duration-300'>Scribe</span> is still under development 🏗️
           </Link>
         </p>
       </div>
@@ -34,11 +34,7 @@ export default function Home() {
         Get started <ArrowRight className='ml-5 h-5 w-5'/>
       </Link>
 
-    {/* <div className="relative group">
-      <div className="">
-        <div className="">Hover over me</div>
-      </div>
-    </div> */}
+    
 
     </MaxWidthWrapper>
 
@@ -54,21 +50,46 @@ export default function Home() {
           />
         </div>
 
-        <div>
-          <div className='mx-auto max-w-6xl px-6 lg:px-8'>
-            <div className='mt-16 flow-root sm:mt-24'>
-              <div className='-m-2 rounded-lg p-2 ring-1 bg-gray-900/5 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-                <Image 
-                src='/drede.png'
-                alt='The preview of the product'
-                width={1728}
-                height={1117}
-                quality={100}
-                className='rounded-md p-2 bg-white sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'
-                />
+        {/* card */}
+          
+        <div className='space-x-10 flex items-center justify-center '>
+
+          <div className="mb-12 mt-12 max-w-xl flex">
+            <div className="px-2 ">
+              <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
+              lg:-m-4 lg:rounded-2xl lg:p-4  ">
+                Hello
+
+                <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
               </div>
             </div>
           </div>
+          
+          <div className="mb-12 mt-12 max-w-xl flex">
+            <div className="px-2 ">
+              <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
+              lg:-m-4 lg:rounded-2xl lg:p-4  ">
+                Hello
+
+                <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-12 mt-12 max-w-xl flex">
+            <div className="px-2 ">
+              <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
+              lg:-m-4 lg:rounded-2xl lg:p-4  ">
+                Hello
+
+                <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
+              </div>
+            </div>
+          </div>
+
+         
+          
+          
         </div>
 
         <div 
