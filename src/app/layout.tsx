@@ -38,13 +38,13 @@ export default function RootLayout({
             
           
             <Navbar />
-              <Loglib
-                  config={{
-                    id: "scribeaitest",
-                    consent: "granted",
-                  }}
-                  />
               {children}
+              <Loglib
+                    config={{
+                        id: "meta",
+                        consent: "granted",
+                    }}
+                />
           </ThemeProvider>
         </body>
       </Providers>

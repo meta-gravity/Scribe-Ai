@@ -1,4 +1,4 @@
-import Dashboard from '@/components/Dashboards'
+import Dashboard from '@/components/Dashboard'
 import SideBar from '@/components/SideBar'
 import Completion from '@/components/ai'
 import { db } from '@/db'
