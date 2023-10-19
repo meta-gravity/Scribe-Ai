@@ -1,4 +1,4 @@
-import Completion from "@/components/ai";
+import Completion from "@/components/chat/ai";
 
 export default function  Settings() {
     return (

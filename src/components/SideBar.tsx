@@ -1,4 +1,4 @@
-import { Dice4Icon } from 'lucide-react';
+import { Calendar, Code2, Cpu, Dice4Icon, Plus, SparklesIcon } from 'lucide-react';
 import Link from 'next/link';
 import React, { ReactNode } from 'react'
 
@@ -17,7 +17,38 @@ const SideBar = (
                 <div className="flex flex-col items-center">
                     <Link href='/'>
                         <div>
-                            <Dice4Icon className="bg-black" />
+                            <div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
+                                <Cpu size={20} />
+                            </div>
+                        </div>
+                    </Link>
+                    <span className='border-b-[1px] border-gray-500/40 w-full p-2'></span>
+                    <Link href='/'>
+                        <div>
+                            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block text-gray-900'>
+                                <SparklesIcon size={20} />
+                            </div>
+                        </div>
+                    </Link>
+                    <Link href='/dashboard/post'>
+                        <div>
+                            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block  text-gray-900'>
+                                <Plus size={20} />
+                            </div>
+                        </div>
+                    </Link>
+                    <Link href='/dashboard/schedule'>
+                        <div>
+                            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block  text-gray-900'>
+                                <Calendar size={20} />
+                            </div>
+                        </div>
+                    </Link>
+                    <Link href='/dashboard/integrations'>
+                        <div>
+                            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block  text-gray-900'>
+                                <Code2 size={20} />
+                            </div>
                         </div>
                     </Link>
                 </div>
@@ -27,4 +58,4 @@ const SideBar = (
     )
 }
 
-export default SideBAr;
+export default SideBar;

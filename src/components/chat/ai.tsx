@@ -1,8 +1,8 @@
 'use client';
  
 import { useCompletion } from 'ai/react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 import { SparklesIcon } from 'lucide-react';
  
 export default function Completion() {
@@ -18,26 +18,6 @@ export default function Completion() {
   });
  
   return (
-    // <div className="mx-auto w-full max-w-md py-24 flex flex-col stretch">
-      // <form onSubmit={handleSubmit} className="flex items-center gap-3 mb-8">
-      //   <label className="grow">
-      //     <input
-      //       className="w-full max-w-md bottom-0 border border-gray-300 rounded shadow-xl p-2"
-      //       value={input}
-      //       onChange={handleInputChange}
-      //       placeholder="write a blog post about dalle-3..."
-      //     />
-      //   </label>
-      //   <button type="button" onClick={stop}>
-      //     Stop
-      //   </button>
-      //   <button disabled={isLoading} type="submit">
-      //     Send
-      //   </button>
-      // </form>
-    //   <output>Completion result: {completion}</output>
-    // </div>
-
     <div className='mx-auto w-full max-w-md py-24 flex flex-col stretch'>
       <div className='bg-gray-500 border border-md rounded-md p-2 '> 
         <output>{completion}</output>
@@ -68,3 +48,23 @@ export default function Completion() {
     </div>
   );
 }
+
+// <div className="mx-auto w-full max-w-md py-24 flex flex-col stretch">
+      // <form onSubmit={handleSubmit} className="flex items-center gap-3 mb-8">
+      //   <label className="grow">
+      //     <input
+      //       className="w-full max-w-md bottom-0 border border-gray-300 rounded shadow-xl p-2"
+      //       value={input}
+      //       onChange={handleInputChange}
+      //       placeholder="write a blog post about dalle-3..."
+      //     />
+      //   </label>
+      //   <button type="button" onClick={stop}>
+      //     Stop
+      //   </button>
+      //   <button disabled={isLoading} type="submit">
+      //     Send
+      //   </button>
+      // </form>
+    //   <output>Completion result: {completion}</output>
+    // </div>

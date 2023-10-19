@@ -1,6 +1,7 @@
 import Dashboard from '@/components/Dashboard'
 import SideBar from '@/components/SideBar'
-import Completion from '@/components/ai'
+import ChatInterface from '@/components/chat/ChatInterface'
+import Completion from '@/components/chat/ai'
 import { db } from '@/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { redirect } from 'next/navigation'
@@ -23,6 +24,7 @@ const Page = async () => {
     <div className='flex '>
       <SideBar />
       <Completion />
+      <ChatInterface />
     </div>
   )
 

@@ -1,4 +1,5 @@
-import Message from "../Message"
+import Message from "./Message"
+import ChatInput from "./ChatInput"
 
 const ChatWrapper = () => {
     return(
@@ -8,7 +9,7 @@ const ChatWrapper = () => {
             </div>
 
 
-            <ChatInput />
+            {/* <ChatInput /> */}
         </div>
     )
 }

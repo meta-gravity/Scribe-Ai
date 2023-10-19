@@ -1,9 +1,10 @@
 import SideBar from "./SideBar"
-import Completion from "./ai"
+import Completion from "./chat/ai"
 
 const Dashboard = () => {
     return (
             <><SideBar />
+
             </>
     )
 }
