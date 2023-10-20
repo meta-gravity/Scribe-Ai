@@ -15,7 +15,7 @@ export default function DashboardLayout({
   return (
     <div className='light'>
         <Providers>
-          <SideBar>
+          {/* <SideBar> */}
             <div 
             className={cn(
               'min-h-screen font-sans antialiased',
@@ -23,7 +23,7 @@ export default function DashboardLayout({
               )}>
               {children}
             </div>
-          </SideBar>
+          {/* </SideBar> */}
         </Providers>
       </div>
     )

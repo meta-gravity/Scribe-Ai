@@ -6,7 +6,8 @@ import { Button, buttonVariants } from '@/components/ui/button'
 // import { loglib } from "@loglib/tracker";
 import Cookiesbtn  from "@/components/cookies"
 import { DashImage } from '@/components/DarshboardImage'
-import Navbar from '@/components/Navbar'
+// import Navbar from '@/components/Navbar'
+import Card from '@/components/HomeComponent/card'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
 
@@ -21,7 +22,6 @@ export const Home = () => {
       // main 
     // ref={targetRef}
     >
-      // <Navbar />
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
         <div className='mx-auto mb-4 dark:border-gray-600 dark:bg-black hover:shadow-lg hover:shadow-purple-500/20 shadow-blur 
         flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 
@@ -41,12 +41,21 @@ export const Home = () => {
         Scribe AI is your solution. Our cutting-edge AI technology is designed to inspire, guide, and supercharge your writing<br/> Say goodbye to writer&apos;s block and hello to limitless🚀.
         </p>
 
+          <div 
+          aria-hidden="true" 
+          className='pointer-events-none absolute inset-x -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
+            <div style={{
+              clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+            }} className='relative left-[calc(50% -11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' 
+            />
+          </div>
+
         <Link className={buttonVariants({
           className: "mt-4 bg-gradient-to-tl rgb(129, 93, 231) via-purple-600 to-violet-700 hover:rounded-lg ease-in-out delay-150 duration-300 transition-property: all right-4",
           size: 'lg',
         }
         )} href="/dashboard" target='_black'>
-          Get started <ArrowRight className='ml-5 h-5 w-5'/>
+          Join waitlist <ArrowRight className='ml-5 h-5 w-5'/>
         </Link>
 
       
@@ -68,47 +77,7 @@ export const Home = () => {
           
 
         
-          {/* card */}
-            
-          <div className='space-x-10 flex items-center justify-center '>
-
-            <div className="mb-12 mt-12 max-w-xl flex">
-              <div className="px-2 ">
-                <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
-                lg:-m-4 lg:rounded-2xl lg:p-4  ">
-                  Hello
-
-                  <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mb-12 mt-12 max-w-xl flex">
-              <div className="px-2 ">
-                <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
-                lg:-m-4 lg:rounded-2xl lg:p-4  ">
-                  Hello
-
-                  <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mb-12 mt-12 max-w-xl flex">
-              <div className="px-2 ">
-                <div className="text-center -m-2 p-2 border-gradient bg-gray-900/5 ring-inset 
-                lg:-m-4 lg:rounded-2xl lg:p-4  ">
-                  Hello
-
-                  <p className='text-left left-1 '>Thniwbwiwgiwwigwg <br/>is is a text aof just nomartl things let see if it wrks...</p>
-                </div>
-              </div>
-            </div>
-
-          
-            
-            
-          </div>
+        <Card />
 
           <div 
           aria-hidden="true" 
