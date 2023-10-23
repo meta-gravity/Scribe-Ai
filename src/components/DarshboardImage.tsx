@@ -12,7 +12,7 @@ export function DashImage() {
           alt="me in this working" 
           quality={100}
           loading='lazy'
-          className='border-2'
+          className='border-2 rounded-4xl'
         />
       </div>
     </div>

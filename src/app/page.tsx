@@ -23,32 +23,33 @@ export const Home = () => {
     // ref={targetRef}
     >
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
-        <div className='mx-auto mb-4 dark:border-gray-600 dark:bg-black hover:shadow-lg hover:shadow-purple-500/20 shadow-blur 
-        flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 
-        shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50 cursor-pointer'>
+        <div className='mx-auto mb-4 dark:border-[#8f67fe] dark:bg-black hover:shadow-lg  hover:shadow-purple-500/60 dark:hover:shadow-purple-500/10 shadow-blur 
+        flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-purple-400 bg-white px-7 py-2 
+        shadow-md backdrop-blur transition-all hover:border-primary ease-in-out hover:bg-white/50 cursor-pointer'>
           <p className='font-semibold text-sm text-gray-700 dark:text-white'>
             <Link href="https://x.com/Metagravity0/status/1708203253173727691?s=20">
-              <span className='hover:text-primary ease-in-out delay-150 duration-300'>Scribe</span> is still under development 🏗️
+              <span className='hover:text-primary ease-in-out delay-100 duration-200'>Scribe</span> is still under development 🏗️
             </Link>
           </p>
         </div>
         <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
             Create Engaging
-            <span className='text-primary'> Content </span>
+            <span className='text-primary '> Content </span>
             in Seconds
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
-        Scribe AI is your solution. Our cutting-edge AI technology is designed to inspire, guide, and supercharge your writing<br/> Say goodbye to writer&apos;s block and hello to limitless🚀.
+        {/* Scribe AI is your solution. Our cutting-edge AI technology is designed to inspire, guide, and supercharge your writing<br/>  */}
+        Say goodbye to writer&apos;s block and hello to limitless🚀.
         </p>
 
-          <div 
-          aria-hidden="true" 
-          className='pointer-events-none absolute inset-x -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
+          {/* <div 
+            aria-hidden="true" 
+            className='pointer-events-none absolute inset-x -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
             <div style={{
               clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
             }} className='relative left-[calc(50% -11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' 
             />
-          </div>
+          </div> */}
 
         <Link className={buttonVariants({
           className: "mt-4 bg-gradient-to-tl rgb(129, 93, 231) via-purple-600 to-violet-700 hover:rounded-lg ease-in-out delay-150 duration-300 transition-property: all right-4",
@@ -63,32 +64,8 @@ export const Home = () => {
 
       {/* values only */}
       <DashImage />
-      <div>
-        <div className='relative isolate'>
-          <div 
-          aria-hidden="true" 
-          className='pointer-events-none absolute inset-x -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
-            <div style={{
-              clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
-            }} className='relative left-[calc(50% -11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' 
-            />
-          </div>
-
-          
-
         
-        <Card />
-
-          <div 
-          aria-hidden="true" 
-          className='pointer-events-none absolute inset-x -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
-            <div style={{
-              clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
-            }} className='relative left-[calc(50% -13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% - 36rem)] sm:w-[72.1857rem]' 
-            />
-          </div>
-        </div>
-      </div>
+      <Card />
 
 
       {/* FEATURES */}
