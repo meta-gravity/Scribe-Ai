@@ -60,12 +60,16 @@ export const Home = () => {
         </Link>
 
       
+      <DashImage />
+
+
+      <Card />
+
+
       </MaxWidthWrapper>
 
       {/* values only */}
-      <DashImage />
         
-      <Card />
 
 
       {/* FEATURES */}
@@ -116,20 +120,7 @@ export const Home = () => {
           </li>
         </ol>
 
-        <div className='mx-auto max-w-6xl px-6 lg:px-8'>
-          <div className='mt-16 flow-root sm:mt-24'>
-            <div className='-m-2 rounded-lg p-2 ring-1 bg-gray-900/5 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-              <Image 
-                src='/dred.png'
-                alt='The preview of the product'
-                width={1500}
-                height={400}
-                quality={100}
-                className='rounded-md p-2 bg-white sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10'
-                />
-              </div>
-            </div>
-          </div>
+       
       </div>
     </
     // main
