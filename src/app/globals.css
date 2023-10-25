@@ -129,3 +129,16 @@
 gradient {
 
 }
+
+.kui-spotlight {
+    --tw-bg-opacity: 1;
+    --tw-blur: blur(200px);
+    background-color: rgb(96 70 169/var(--tw-bg-opacity));
+    border-radius: 9999px;
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    height: 430px;
+    opacity: .7;
+    position: absolute;
+    width: 430px;
+    z-index: 0;
+}

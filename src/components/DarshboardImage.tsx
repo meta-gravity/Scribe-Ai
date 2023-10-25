@@ -1,13 +1,11 @@
 import Image from 'next/image'
-import { motion } from "framer-motion"
-// import dash from '../../public/dash.png'
 import da from '../../public/da.png'
 
 export function DashImage() {
   return (
       <>
         <div className='mx-auto max-w-6xl px-6 lg:px-8'>
-          <div className='bg-purple-500 backdrop-blur-lg shadow-md '>
+          <div className='bg-purple-500 shadow-md '>
             <div className='mt-16 flow-root sm:mt-24 p-2'>
               <Image
                 src={da}

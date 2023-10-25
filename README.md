@@ -48,18 +48,6 @@
 - [trpc/client](https://trpc.io/docs/client): Client library for making server-client communication easier.
 - [trpc/next](https://trpc.io/docs/next): Next.js integration for trpc, simplifying server-client communication.
 
-## 📝 Project Summary
-
-- [src](src): Main source code directory.
-- [src/app](src/app): Contains the application-specific code.
-- [src/app/(Dashboard)](src/app/(Dashboard)): Dashboard related components and logic.
-- [src/app/(Dashboard)/dashboard](src/app/(Dashboard)/dashboard): Dashboard page components and logic.
-- [src/app/(Dashboard)/dashboard/settings](src/app/(Dashboard)/dashboard/settings): Dashboard settings page components and logic.
-- [src/app/api](src/app/api): API related code.
-- [src/app/api/auth](src/app/api/auth): Authentication API code.
-- [src/app/api/completion](src/app/api/completion): Completion API code.
-- [src/app/api/trpc](src/app/api/trpc): TRPC API code.
-- [src/components](src/components): Reusable components.
 
 ## ⚙️ Setting Up
 
@@ -100,7 +88,7 @@ yarn dev
         </a>
         <br />
         <a href="https://github.com/meta-gravity/Scribe-Ai/commits?author=meta-gravity" title="Contributions" spellcheck="false">
-          22 contributions
+          32 contributions
         </a>
       </td></table>
 

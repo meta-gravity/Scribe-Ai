@@ -70,7 +70,7 @@ export default function Cards() {
                         
 
 
-                        <Card className="p-6 border-2 border-stone-800 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
+                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
                         pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
@@ -113,7 +113,27 @@ export default function Cards() {
                         </Card>
 
 
-                        <Card className="p-6 bg-[#101010] border-2 border-stone-800 rounded-xl flex flex-col gap-1
+                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1
+                        pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
+                            650px circle at 0px 0px,
+                            rgba(200, 200, 200, 0.1),
+                            transparent 50%
+                            )
+                        ">
+                            <CardHeader>
+                                <CardTitle>
+                                    <span className="font-bold text-xl">Quality Content</span>
+                                    <Badge className="text-center">AI Powered</Badge>
+                                </CardTitle>
+                            </CardHeader>
+
+                            <CardContent className="flex m-1 text-center">
+                                Our AI content writer produces high-quality content that is both
+                                engaging and SEO-optimized.
+                            </CardContent>
+                        </Card>
+
+                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-5 col-span-3
                         pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
