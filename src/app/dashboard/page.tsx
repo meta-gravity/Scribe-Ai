@@ -25,7 +25,7 @@ const Page = async () => {
   return (
     <div className='flex '>
       <SideBar />
-      <Completion />
+      {/* <Completion /> */}
       {/* <AI /> */}
 
       {/* <ChatInterface /> */}

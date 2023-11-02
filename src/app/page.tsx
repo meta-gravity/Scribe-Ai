@@ -39,7 +39,7 @@ export const Home = () => {
           </div>
           <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
               Create Engaging
-              <span className='text-primary'> Content </span>
+              <span className='text-primary text-semibold'> Content </span>
               in Seconds
           </h1>
           <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">

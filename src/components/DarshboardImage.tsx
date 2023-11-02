@@ -5,7 +5,7 @@ export function DashImage() {
   return (
       <>
         <div className='mx-auto max-w-6xl px-6 lg:px-8'>
-          <div className='bg-purple-500 shadow-md '>
+          <div className=''>
             <div className='mt-16 flow-root sm:mt-24 p-2'>
               <Image
                 src={da}
