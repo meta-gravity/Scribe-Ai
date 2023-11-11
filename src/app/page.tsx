@@ -44,6 +44,7 @@ export const Home = () => {
           </h1>
           <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
             Designed to inspire, guild and supercharge your content a an indvidual, marketer, designer or developer 🚀
+            jesusu is loard over my life oooooo fucking tired
           </p>
 
 
