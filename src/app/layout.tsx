@@ -6,9 +6,12 @@ import Navbar from '@/components/Navbar'
 import Providers from '@/components/Providers' 
 import Loglib from "@loglib/tracker/react";
 import { ThemeProvider } from '@/components/theme-provider'
+import { GeistSans, 
+  // GeistMono 
+} from 'geist/font/sans'
 // import { ThemeProvider } from '@/components/theme-provider'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Scribe Ai',
@@ -22,12 +25,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" 
-      className='dark'>
+      className={GeistSans.className}
+      >
       <Providers>
         <body 
         className={cn(
           'min-h-screen font-sans antialiased gradient',
-          inter.className
+          GeistSans.className
+          // inter.className
         )}>
           <ThemeProvider
               attribute="class"

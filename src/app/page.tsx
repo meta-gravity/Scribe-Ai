@@ -39,14 +39,15 @@ export const Home = () => {
           </div>
           <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
               Create Engaging
-              <span className='text-primary text-semibold'> Content </span>
+              <span className='text-highlight-purple text-semibold'> Content </span>
               in Seconds
           </h1>
           <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
             Designed to inspire, guild and supercharge your content a an indvidual, marketer, designer or developer 🚀
-            jesusu is loard over my life oooooo fucking tired
           </p>
 
+
+         
 
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
@@ -62,13 +63,17 @@ export const Home = () => {
               opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' />
             </div> */}
           <div className='flex mt-6 items-center space-x-3'>
-            <Input placeholder="Email address...📨" 
-            type="email" 
-            // value="" 
-            className="pr-[62.9333px]  
-            focus:border-2 focus:border-purple-200 bg" 
-
+            <form action="">
+             {/* <div className="form-group">
+              <Input type="email" id="email" required placeholder="Email" />
+            </div> */}
+             <Input placeholder="Email address...📨" 
+             type="email" 
+             // value="" 
+             className="pr-[62.9333px]  
+             focus:border-2 focus:border-purple-200 bg" 
             />
+            </form>
 
             <Link className={buttonVariants({
               className: "flex pr-4  bg-gradient-to-tlrgb(129, 93, 231) via-purple-600 to-violet-700 hover:rounded-lg ease-in-out delay-150 duration-300 transition-property:all ",

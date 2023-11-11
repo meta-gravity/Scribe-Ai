@@ -56,10 +56,13 @@ export default function Cards() {
                 <div className="relative rounded-3xl border-t border-slate-600 pt-20 overflow-hidden pb-4 ">
                     <div aria-hidden="true" 
                     className="left-1/2 top-0 w-full  user-select-none center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2 
-                    background:linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%)"></div>
+                    background:linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%)"></div>
                     <div aria-hidden="true" 
                     className="-top-1 left-1/2 h-[200px] w-full user-select-none center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2 
                     background:conic-gradient(from 90deg at 50% 50%, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, transparent 80%)"></div>
+
+
+                    
 
 
                     <h2 className="mt-4 md:mt-0 font-medium font-effect-hero font-display mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">Features</h2>
@@ -71,7 +74,8 @@ export default function Cards() {
 
 
                         <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
-                        pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
+                        pointer-events-none transition duration-300 group-hover:opacity-100 
+                        background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
                             transparent 50%

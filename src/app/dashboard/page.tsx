@@ -27,7 +27,7 @@ const Page = async () => {
       <SideBar />
       {/* <Completion /> */}
       {/* <AI /> */}
-      <ChatInterface />
+      {/* <ChatInterface /> */}
     </div>
   )
 
