@@ -62,16 +62,10 @@ export default function Cards() {
                     background:conic-gradient(from 90deg at 50% 50%, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, transparent 80%)"></div>
 
 
-                    
-
-
                     <h2 className="mt-4 md:mt-0 font-medium font-effect-hero font-display mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">Features</h2>
                     <p className=" mx-auto mb-10 max-w-sm lg:max-w-[34rem] text-center text-xl md:text-[1.125rem] md:leading-[1.5] text-muted-foreground  mt-4 relative z-40">AI-powered, Connect to your workflow seamleasly and more</p>
 
                     <div className="grid grid-cols-3 gap-4 w-full">
-
-                        
-
 
                         <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
                         pointer-events-none transition duration-300 group-hover:opacity-100 
@@ -137,7 +131,7 @@ export default function Cards() {
                             </CardContent>
                         </Card>
 
-                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-5 col-span-3
+                        {/* <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-5 col-span-3
                         pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
@@ -155,7 +149,7 @@ export default function Cards() {
                                 Our AI content writer produces high-quality content that is both
                                 engaging and SEO-optimized.
                             </CardContent>
-                        </Card>
+                        </Card> */}
 
                     </div>
                     

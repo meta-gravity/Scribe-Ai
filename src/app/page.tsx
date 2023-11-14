@@ -43,13 +43,13 @@ export const Home = () => {
               in Seconds
           </h1>
           <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
-            Designed to inspire, guild and supercharge your content a an indvidual, marketer, designer or developer 🚀
+            Designed to inspire, guild and supercharge your content as an indvidual, marketer, designer or developer 🚀
           </p>
 
 
          
 
-          {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
+          <span className="kui-spotlight absolute right-[5px] top-2/4"></span>
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
 
             {/* <div 
