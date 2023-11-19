@@ -9,6 +9,7 @@ import { DashImage } from '@/components/DarshboardImage'
 // import Navbar from '@/components/Navbar'
 import Card from '@/components/HomeComponent/card'
 import { Input } from '@/components/ui/input'
+import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
 
@@ -91,6 +92,8 @@ export const Home = () => {
           <DashImage />
 
           <Card />
+
+          {/* <BentoDemo /> */}
 
 
       </MaxWidthWrapper>
