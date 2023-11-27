@@ -25,10 +25,10 @@ export const Home = () => {
     >
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
           <div className='
-          mx-auto mb-4  dark:bg-black dark:border-purple-900 hover:shadow-xl 
-          hover:shadow-purple-500/60 dark:hover:shadow-purple-500/20 shadow-blur 
-          flex max-w-fit items-center  border-transparent  justify-center space-x-2
-          rounded-full border bg-white px-8  py-2 font-medium italic xl:mx-0 
+          mx-auto mb-6 dark:bg-black dark:border-purple-500 hover:shadow-xl 
+          hover:shadow-purple-500/20 dark:hover:shadow-purple-500/20 border-black/10 shadow-blur 
+          flex max-w-fit items-center justify-center space-x-2
+          rounded-full border bg-white px-8 py-2 font-medium italic xl:mx-0 
           shadow-md backdrop-blur transition-all hover:border-primary ease-in-out
           hover:bg-white/50 cursor-pointer'>
             <p className='font-medium text-xs dark:text-purple-200'>
