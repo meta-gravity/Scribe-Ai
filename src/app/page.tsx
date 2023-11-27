@@ -9,7 +9,7 @@ import { DashImage } from '@/components/DarshboardImage'
 // import Navbar from '@/components/Navbar'
 import Card from '@/components/HomeComponent/card'
 import { Input } from '@/components/ui/input'
-import { BentoDemo } from '@/components/magicui/bento-grid'
+// import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
 
@@ -65,9 +65,6 @@ export const Home = () => {
             </div> */}
           <div className='flex mt-6 items-center space-x-3'>
             <form action="">
-             {/* <div className="form-group">
-              <Input type="email" id="email" required placeholder="Email" />
-            </div> */}
              <Input placeholder="Email address...📨" 
              type="email" 
              // value="" 
@@ -94,14 +91,10 @@ export const Home = () => {
           <Card />
 
           {/* <BentoDemo /> */}
-
-
       </MaxWidthWrapper>
 
       {/* values only */}
         
-
-
       {/* FEATURES */}
       <div className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
         <div className='mb-12 px-6 lg:px-8'>
