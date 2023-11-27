@@ -42,7 +42,6 @@ export default function Completion() {
         </form>
       </div>
 
-      
     </div>
   );
 }
