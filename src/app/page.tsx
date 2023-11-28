@@ -9,6 +9,8 @@ import { DashImage } from '@/components/DarshboardImage'
 // import Navbar from '@/components/Navbar'
 import Card from '@/components/HomeComponent/card'
 import { Input } from '@/components/ui/input'
+import Trusted from '@/components/HomeComponent/Trusted'
+import Footer from '@/components/footer'
 // import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
@@ -25,8 +27,8 @@ export const Home = () => {
     >
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
           <div className='
-          mx-auto mb-6 dark:bg-black dark:border-purple-500 hover:shadow-xl 
-          hover:shadow-purple-500/20 dark:hover:shadow-purple-500/20 border-black/10 shadow-blur 
+          mx-auto mb-6 dark:bg-black dark:border-purple-900/30 hover:shadow-xl 
+          hover:shadow-purple-500/20 dark:hover:shadow-purple-400/10 border-black/10 shadow-blur 
           flex max-w-fit items-center justify-center space-x-2
           rounded-full border bg-white px-8 py-2 font-medium italic xl:mx-0 
           shadow-md backdrop-blur transition-all hover:border-primary ease-in-out
@@ -90,6 +92,8 @@ export const Home = () => {
 
           <Card />
 
+          <Trusted />
+
           {/* <BentoDemo /> */}
       </MaxWidthWrapper>
 
@@ -142,9 +146,12 @@ export const Home = () => {
             </div>
           </li>
         </ol>
+        <span className="kui-spotlight absolute left-[5px] "></span>
 
-       
+
       </div>
+      <Footer />
+
 
     </>
   )
