@@ -40,37 +40,37 @@ export default function Footer(){
                         </p>
 
                         <div className="mt-6 flex justify-center gap-4 lg:justify-start">
-                        <a
+                        <Link
                             className="text-gray-500 transition hover:text-primary"
-                            href=""
+                            href="https://twitter/metagravity0"
                             target="_blank"
                             rel="noreferrer">
                             <span className="sr-only"> Twitter </span>
 
                             <LucideTwitter className="h-6 w-6 "/>
-                        </a>
+                        </Link>
 
-                        <a
+                        <Link
                             className="text-gray-500 transition hover:text-primary"
-                            href=""
+                            href="https://github.com/meta-gravity/Scribe-Ai"
                             target="_blank"
                             rel="noreferrer"
                         >
                             <span className="sr-only"> Github </span>
 
                             <LucideGithub className="h-6 w-6"/>
-                        </a>
+                        </Link>
 
-                        <a
+                        <Link
                             className="text-gray-500 transition hover:text-primary"
-                            href=""
+                            href="https://dub.co/genZ-developer"
                             target="_blank"
                             rel="noreferrer"
                         >
                             <span className="sr-only"> Slack </span>
 
                              <Slack className="h-6 w-6"/>
-                        </a>
+                        </Link>
 
                         
                     </div>
