@@ -162,6 +162,16 @@ gradient {
   line-height: 1;
   display: inline-block;
 }
+.text-highlight-red {
+  background-image: linear-gradient(90deg,rgba(98,72,255,.2),rgba(98,72,255,.05));
+  border-left: 4px solid #e55c5c;
+  border-radius: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  line-height: 1;
+  display: inline-block;
+}
+
 
 .text-highlight-purple-light {
   background-image: linear-gradient(90deg,rgba(99, 72, 255, 0.348),rgba(99, 72, 255, 0.315));

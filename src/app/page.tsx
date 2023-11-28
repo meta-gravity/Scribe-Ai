@@ -11,6 +11,10 @@ import Card from '@/components/HomeComponent/card'
 import { Input } from '@/components/ui/input'
 import Trusted from '@/components/HomeComponent/Trusted'
 import Footer from '@/components/footer'
+import { ToastAction } from '@/components/ui/toast'
+import { toast } from '@/components/ui/use-toast'
+import { ButtonToast1 } from '@/components/ButtonToastWait'
+
 // import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
@@ -40,9 +44,10 @@ export const Home = () => {
             </p>
             
           </div>
-          <h1 className='max-w-4xl font-bold text-5xl md:text-6xl lg:text-7xl'>
+          <h1 className='max-w-4xl font-bold text-5xl sm:text-7xl md:text-6xl lg:text-7xl'>
               Create Engaging
               <span className='text-highlight-purple text-semibold'> Content </span>
+              <br />
               in Seconds
           </h1>
           <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg dark:text-gray-400">
@@ -74,17 +79,8 @@ export const Home = () => {
              focus:border-2 focus:border-purple-200 bg" 
             />
             </form>
+            <ButtonToast1 />
 
-            <Link className={buttonVariants({
-              className: "flex pr-4  bg-gradient-to-tlrgb(129, 93, 231) via-purple-600 to-violet-700 hover:rounded-lg ease-in-out delay-150 duration-300 transition-property:all ",
-              size: 'sm',
-            }
-            )} href="/dashboard" target='_black'>
-              <span className="flex items-center ">
-               waitlist
-                <ArrowRight className='ml-2 h-4 w-5'/>
-              </span>
-            </Link>
           </div>
 
         
@@ -92,64 +88,18 @@ export const Home = () => {
 
           <Card />
 
-          <Trusted />
+          {/* <Trusted /> */}
+
+          {/* <ButtonToast1 /> */}
+
 
           {/* <BentoDemo /> */}
       </MaxWidthWrapper>
 
       {/* values only */}
         
-      {/* FEATURES */}
-      <div className='mx-auto mb-32 mt-32 max-w-5xl sm:mt-56'>
-        <div className='mb-12 px-6 lg:px-8'>
-          <div className='mx-auto max-x-2xl sm:text-center'>
-            <h2 className='mt-2 font-bold text-gray-900 text-4xl sm:text-5xl'>Create blogs and newsletter insatantly</h2>
-            <p className='mt-4 text-lg text-gray-600'>
-              creating blog post has never been easier and fun than with newsly
-            </p>
-          </div>
-        </div>
+      <span className="kui-spotlight absolute center"></span>
 
-        {/* <>
-        <Button onClick={() => loglib.setConsent("granted")}>Accept</Button>
-      </> */}
-      <Cookiesbtn />
-
-        {/* steps */}
-        <ol className='my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0'>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
-              <span className='text-sm font-medium text-blue-600'>Step 1</span>
-              <span className='text-lg font-semibold'>Sign up for an account</span>
-              <span className='mt-2 text-zinc-500'>Either starting with a free account or choose our fantastic {''}
-                <Link href="/pricing" className='text-blue-700 underline underline-offset-2'>
-                  pro plan
-                </Link>
-                .
-              </span>
-            </div>
-          </li>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
-              <span className='text-sm font-medium text-blue-600'>Step 2</span>
-              <span className='text-lg font-semibold'>You can upload a refrence newsletter or blog post</span>
-              <span className='mt-2 text-zinc-500'>we&apos;ll anaylize your refrence blog and get it ready for you to generate creative post</span>
-            </div>
-          </li>
-          <li className='md:flex-1'>
-            <div className='flex flex-col space-y-2 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4'>
-              <span className='text-sm font-medium text-blue-600'>Step 3</span>
-              <span className='text-lg font-semibold'>Start generating</span>
-              <span className='mt-2 text-zinc-500'>It&apos;s that simple. Try {''} <Link href='/' className='font-medium hover:text-blue-700 hover:underline underline-offset-2'>Newsly</Link> {' '} today -
-              it really take&apos;s less than a minute.
-              </span>
-            </div>
-          </li>
-        </ol>
-        <span className="kui-spotlight absolute left-[5px] "></span>
-
-
-      </div>
       <Footer />
 
 

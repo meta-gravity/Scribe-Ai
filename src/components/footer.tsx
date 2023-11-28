@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Binary, LucideGithub, LucideTwitter, Slack } from "lucide-react";
+import { ModeToggle } from "./ModeToggle";
+import { ModeToggle2 } from "./ModeToggle2";
+// import { Separator } from "./ui/separator";
 
 export default function Footer(){
     return (
@@ -20,7 +23,7 @@ export default function Footer(){
                             <label className="sr-only"> Email </label>
 
                             <Input
-                                className="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium dark:bg-[#0a0a0a0a] dark:border-gray-500/30"
+                                className="w-full rounded-full border-gray-300 bg-gray-100 p-4 pe-32 text-sm font-medium dark:bg-[#0a0a0a0a] dark:border-gray-500/30"
                                 id="email"
                                 type="email"
                                 placeholder="ScribeAi@gmail.com"
@@ -39,7 +42,7 @@ export default function Footer(){
                              Designed to inspire, guild and supercharge your content as an indvidual, marketer, designer or developer 🚀
                         </p>
 
-                        <div className="mt-6 flex justify-center gap-4 lg:justify-start">
+                    <div className="mt-6 flex justify-center gap-4 lg:justify-start">
                         <Link
                             className="text-gray-500 transition hover:text-primary"
                             href="https://twitter/metagravity0"
@@ -49,6 +52,8 @@ export default function Footer(){
 
                             <LucideTwitter className="h-6 w-6 "/>
                         </Link>
+
+                        {/* <Separator orientation="vertical" /> */}
 
                         <Link
                             className="text-gray-500 transition hover:text-primary"
@@ -60,6 +65,8 @@ export default function Footer(){
 
                             <LucideGithub className="h-6 w-6"/>
                         </Link>
+
+                        {/* <Separator /> */}
 
                         <Link
                             className="text-gray-500 transition hover:text-primary"
@@ -196,14 +203,14 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="mt-16 border-t border-gray-500/40 pt-8">
-                    <div className=" text-center text-xs/relaxed text-gray-500">
+                <div className="mt-16 border-t border-gray-500/10 pt-8 flex ">
+                    <div className=" text-left text-xs/relaxed text-gray-500 flex-start">
                             © 2023 Scribe, Inc. 
 
                                 <br />
 
-                                <p className="flex text-center items-center justify-center">
-                                    Created with <Binary className="h-4 w-4 items-center"/> by 
+                                <p className="flex ">
+                                    Created with <Binary className="h-5 w-5 items-center"/> by 
                                 </p> 
 
                                 <p className="hover:text-underline hover:cursor-pointer hover:text-primary hover:text-sm">
@@ -211,6 +218,10 @@ export default function Footer(){
                                         Metagravity
                                     </Link>
                                 </p>
+                    </div>
+
+                    <div className="text-center items-center justify-center">
+                        <ModeToggle2 />
                     </div>
                 </div>
             </div>
