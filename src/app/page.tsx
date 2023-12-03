@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import MaxWidthWrapper from '../components/MaxWidthWrapper'
 import Link from 'next/link'
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Wand2Icon } from "lucide-react"
 import { Button, buttonVariants } from '@/components/ui/button'
 // import { loglib } from "@loglib/tracker";
 import Cookiesbtn  from "@/components/cookies"
@@ -70,18 +70,14 @@ export const Home = () => {
               bg-gradient-to-tr from-[#cc5084] to-[#9089fc] 
               opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' />
             </div> */}
-          <div className='flex mt-6 items-center space-x-3'>
-            <form action="">
-             <Input placeholder="Email address...📨" 
-             type="email" 
-             // value="" 
-             className="pr-[62.9333px]  
-             focus:border-2 focus:border-purple-200 bg" 
-            />
-            </form>
-            <ButtonToast1 />
+            <div className='flex mt-8 items-center justify-center'>
+              {/* <div className="left-0 top-0 absolute bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50"></div> */}
+              <Button className="bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50 space-x-3">
+               
+               <Wand2Icon className='h-3 w-3'/> Join Waitlist
+              </Button>
 
-          </div>
+            </div>
 
         
           <DashImage />

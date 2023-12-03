@@ -4,9 +4,7 @@ import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Binary, LucideGithub, LucideTwitter, Slack } from "lucide-react";
-import { ModeToggle } from "./ModeToggle";
 import { ModeToggle2 } from "./ModeToggle2";
-// import { Separator } from "./ui/separator";
 
 export default function Footer(){
     return (
@@ -42,19 +40,18 @@ export default function Footer(){
                              Designed to inspire, guild and supercharge your content as an indvidual, marketer, designer or developer 🚀
                         </p>
 
-                    <div className="mt-6 flex justify-center gap-4 lg:justify-start">
+                    <div className="mt-6 flex justify-center gap-4 lg:justify-start cursor-move">
                         <Link
-                            className="text-gray-500 transition hover:text-primary"
+                            className="text-[#474866] "
                             href="https://twitter/metagravity0"
-                            target="_blank"
+                            // target="_blank"
                             rel="noreferrer">
                             <span className="sr-only"> Twitter </span>
 
-                            <LucideTwitter className="h-6 w-6 "/>
+                            <LucideTwitter className="h-6 w-6 text-color-[#474866]"/>
                         </Link>
 
-                        {/* <Separator orientation="vertical" /> */}
-
+                       
                         <Link
                             className="text-gray-500 transition hover:text-primary"
                             href="https://github.com/meta-gravity/Scribe-Ai"
@@ -63,10 +60,9 @@ export default function Footer(){
                         >
                             <span className="sr-only"> Github </span>
 
-                            <LucideGithub className="h-6 w-6"/>
+                            <LucideGithub className="h-6 w-6 text-color-[#474866]"/>
                         </Link>
 
-                        {/* <Separator /> */}
 
                         <Link
                             className="text-gray-500 transition hover:text-primary"
@@ -76,7 +72,7 @@ export default function Footer(){
                         >
                             <span className="sr-only"> Slack </span>
 
-                             <Slack className="h-6 w-6"/>
+                            <Slack className="h-6 w-6 text-color-[#474866]"/>
                         </Link>
 
                         
@@ -93,7 +89,7 @@ export default function Footer(){
                                     className="text-gray-500 transition hover:text-primary"
                                     href="/"
                                 >
-                                    Documentation
+                                    Documentation ↗
                                 </a>
                                 </li>
 
@@ -120,7 +116,7 @@ export default function Footer(){
                                     className="text-gray-500 transition hover:text-primary"
                                     href="/"
                                 >
-                                    Changelog
+                                    Changelog ↗
                                 </a>
                                 </li>
                             </ul>
@@ -153,7 +149,7 @@ export default function Footer(){
                                     className="text-gray-500 transition hover:text-primary"
                                     href="/"
                                 >
-                                    privacy policy
+                                    privacy policy ↗
                                 </a>
                                 </li>
 
@@ -195,7 +191,7 @@ export default function Footer(){
                                     className="text-gray-500 transition hover:text-primary"
                                     href="/"
                                 >
-                                    Community...
+                                    Community... ↗
                                 </a>
                                 </li>
                             </ul>
