@@ -75,7 +75,6 @@ export default function App() {
           <DashImage />
 
           <Card />
-          {/* <BentoDemo /> */}
       </MaxWidthWrapper>
 
       {/* values only */}
