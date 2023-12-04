@@ -59,17 +59,6 @@ export default function App() {
 
           <span className="kui-spotlight absolute right-[5px] top-2/4"></span>
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
-
-            {/* <div 
-              aria-hidden="true" 
-              className='pointer-events-none absolute inset-x -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
-              <div className='relative 
-              aspect-[1155/678]
-              w-[36.125rem] 
-              -translate-x-1/2 rotate-[30deg] 
-              bg-gradient-to-tr from-[#cc5084] to-[#9089fc] 
-              opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1857rem]' />
-            </div> */}
             <div className='flex mt-8 items-center justify-center'>
               {/* <div className="left-0 top-0 absolute bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50"></div> */}
               <Button className="bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50 space-x-3">
@@ -83,12 +72,6 @@ export default function App() {
           <DashImage />
 
           <Card />
-
-          {/* <Trusted /> */}
-
-          {/* <ButtonToast1 /> */}
-
-
           {/* <BentoDemo /> */}
       </MaxWidthWrapper>
 
@@ -103,4 +86,3 @@ export default function App() {
   )
 }
 
-// export default Home;
