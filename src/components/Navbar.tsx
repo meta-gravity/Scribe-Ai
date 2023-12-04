@@ -75,7 +75,7 @@ const Navbar = () => {
                                                     width={45}
                                                     height={10}
                                                     />
-                                                    <AvatarFallback>{user?.given_name?.[1]}</AvatarFallback>
+                                                    <AvatarFallback>{user?.given_name?.[0]}{user?.family_name?.[0]}</AvatarFallback>
                                                 </Avatar>
 
                                                 ) 
@@ -86,7 +86,7 @@ const Navbar = () => {
                                                 </div>
                                             )}
                                            </DropdownMenuTrigger>
-                                           <DropdownMenuContent className="px-2 ring-1 ring-gray-300/70">
+                                           <DropdownMenuContent className="px-2 ring-1 ring-gray-300/70 w-56">
                                                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                                                     {/* <p className="">
                                                         {user?.given_name} {user?.family_name}
@@ -105,7 +105,7 @@ const Navbar = () => {
                                                          <span>Dashboard</span>
                                                         </Link>
                                                         
-                                                        <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                                                        <DropdownMenuShortcut>⇧⌘D</DropdownMenuShortcut>
                                                     </DropdownMenuItem>
                                                     <DropdownMenuItem>
                                                         <CreditCard className="mr-2 h-4 w-4" />
