@@ -87,9 +87,9 @@ export default function Footer(){
                             <li>
                                 <a
                                     className="text-gray-500 transition hover:text-primary"
-                                    href="/"
+                                    href="/blog"
                                 >
-                                    Documentation ↗
+                                    Blog ↗
                                 </a>
                                 </li>
 
