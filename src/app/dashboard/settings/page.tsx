@@ -1,7 +1,7 @@
-import Completion from "@/components/ai";
 
 export default function  Settings() {
     return (
-        <Completion />
+        // <Completion />
+        <h1>hrllo</h1>
     )
 }
