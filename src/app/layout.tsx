@@ -45,10 +45,9 @@ export default function RootLayout({
               <Navbar />
               {children}
               <Loglib
-                    config={{
-                        id: "meta",
-                        consent: "granted",
-                    }}
+                  config={{
+                    id: "scribe-ai_vercel",
+                  }}
                 />
           </ThemeProvider>
         </body>
