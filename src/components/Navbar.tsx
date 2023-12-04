@@ -7,6 +7,7 @@ import { ArrowRight, CreditCard, Keyboard, LogOutIcon, Settings, User } from "lu
 import { ModeToggle } from "./ModeToggle"
 import Image from "next/image"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuTrigger } from "./ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 
 const Navbar = () => {
     const { isAuthenticated, getUser } = getKindeServerSession()
@@ -67,13 +68,16 @@ const Navbar = () => {
                                             <DropdownMenuTrigger asChild>
 
                                             {user?.picture ? (
-                                                <Image
-                                                className="rounded-full"
-                                                src={user?.picture}
-                                                width={45}
-                                                height={10}
-                                                alt="user profile avatar"
-                                                />
+                                                <Avatar>
+                                                    <AvatarImage
+                                                    
+                                                    src={user?.picture}
+                                                    width={45}
+                                                    height={10}
+                                                    />
+                                                    <AvatarFallback>{user?.given_name?.[1]}</AvatarFallback>
+                                                </Avatar>
+
                                                 ) 
                                                 : (
                                                     <div className="p-1 border-gray-200 border b-3 px-2 m-2">
@@ -92,6 +96,15 @@ const Navbar = () => {
                                                     <DropdownMenuItem>
                                                         <User className="mr-2 h-4 w-4" />
                                                         <span>Profile</span>
+                                                        <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                                                    </DropdownMenuItem>
+                                                    <DropdownMenuItem>
+                                                        <User className="mr-2 h-4 w-4" />
+                                                        <Link href='/dashboard'>
+
+                                                         <span>Dashboard</span>
+                                                        </Link>
+                                                        
                                                         <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                                                     </DropdownMenuItem>
                                                     <DropdownMenuItem>
