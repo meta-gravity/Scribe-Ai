@@ -66,6 +66,9 @@ export default function App() {
                <Wand2Icon className='h-3 w-3'/> Join Waitlist
               </Button>
 
+             
+
+
             </div>
 
         
