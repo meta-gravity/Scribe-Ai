@@ -19,7 +19,7 @@ import { ButtonToast1 } from '@/components/ButtonToastWait'
 // import { useScroll } from "framer-motion"
 // import { useRef } from "react"
 
-export default function Home() {
+export default function App() {
   // const targetRef = useRef<HTMLDivElement>(null);
   // const { scrollYProgress } = useScroll({
   //   target: targetRef,
