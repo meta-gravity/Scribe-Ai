@@ -32,7 +32,7 @@ const Page = () => {
   return (
     <div className='w-full mt-24 flex justify-center'>
       <div className='flex flex-col items-center gap-2'>
-        <Loader2 className='h-8 w-8 animate-spin text-zinc-800' />
+        <Loader2 className='h-8 w-8 animate-spin text-zinc-800 dark:text-zinc-500' />
         <h3 className='font-semibold text-xl'>
           Setting up your account...
         </h3>
@@ -43,4 +43,3 @@ const Page = () => {
 }
 
 export default Page
-// why is it not working
