@@ -34,11 +34,3 @@ export const appRouter = router({
 });
 
 export type AppRouter = typeof appRouter;
-
- 
- 
-const server = createHTTPServer({
-  router: appRouter,
-});
- 
-server.listen(3000);
