@@ -1,7 +1,3 @@
-
-import Dashboard from '@/components/Dashboard'
-import SideBar from '@/components/SideBar'
-
 import { db } from '@/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { redirect } from 'next/navigation'
@@ -27,7 +23,6 @@ const Page = async () => {
   })
 
   if(!dbUser) redirect('/auth-callback?origin=dashboard')
-  // if(!dbUser) redirect('/dashboard')
 
   return (
     <div className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">

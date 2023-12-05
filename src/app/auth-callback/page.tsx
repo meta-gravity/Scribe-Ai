@@ -27,7 +27,7 @@ const Page = () => {
     },
     retry: true,
     retryDelay: 500,
-  });  
+  });    
 
   return (
     <div className='w-full mt-24 flex justify-center'>
