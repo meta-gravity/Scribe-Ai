@@ -11,18 +11,19 @@ import Image from 'next/image'
 import DashContent from '@/components/Dashboard/content'
 
 const Page = async () => {
-  const { getUser } = getKindeServerSession()
-  const user = getUser()
+  // const { getUser } = getKindeServerSession()
+  // const user = getUser()
 
-  if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
+  // if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
 
-  const dbUser = await db.user.findFirst({
-    where: {
-      id: user.id
-    }
-  })
+  // const dbUser = await db.user.findFirst({
+  //   where: {
+  //     id: user.id
+  //   }
+  // })
 
-  if(!dbUser) redirect('/auth-callback?origin=dashboard')
+  // if(!dbUser) redirect('/auth-callback?origin=dashboard')
+
 
   return (
     <div className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
