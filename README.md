@@ -88,7 +88,7 @@ yarn dev
         </a>
         <br />
         <a href="https://github.com/meta-gravity/Scribe-Ai/commits?author=meta-gravity" title="Contributions" spellcheck="false">
-          60 contributions
+          78 contributions
         </a>
       </td></table>
 
