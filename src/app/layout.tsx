@@ -7,11 +7,9 @@ import Providers from '@/components/Providers'
 import Loglib from "@loglib/tracker/react";
 import { ThemeProvider } from '@/components/theme-provider'
 import { GeistSans, 
-  // GeistMono 
-} from 'geist/font/sans'
-// import { ThemeProvider } from '@/components/theme-provider'
 
-// const inter = Inter({ subsets: ['latin'] })
+} from 'geist/font/sans'
+
 
 export const metadata: Metadata = {
   title: 'Scribe Ai',
