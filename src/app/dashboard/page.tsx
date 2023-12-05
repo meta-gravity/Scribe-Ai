@@ -12,6 +12,7 @@ import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, Dropdown
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Calculator } from 'lucide-react'
 import Image from 'next/image'
+import DashContent from '@/components/Dashboard/content'
 
 const Page = async () => {
   const { getUser } = getKindeServerSession()
@@ -70,7 +71,7 @@ const Page = async () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
+        {/* <div className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
           <Link className="lg:hidden" href="#">
             <Calculator className="h-6 w-6" />
             <span className="sr-only">Home</span>
@@ -117,25 +118,8 @@ const Page = async () => {
               <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-        </header>
-        <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
-          <div className="flex items-center">
-            <h1 className="font-semibold text-lg md:text-2xl">Home</h1>
-          </div>
-          <div className="border shadow-sm rounded-lg">
-            <Card>
-              <CardHeader className="pb-4">
-                <CardTitle>Top Songs</CardTitle>
-                <CardDescription>Discover the best songs of the week.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full" size="sm">
-                  Browse
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </main>
+        </div> */}
+        <DashContent />
       </div>
     </div>
   )
