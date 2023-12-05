@@ -26,8 +26,8 @@ const Page = async () => {
     }
   })
 
-  // if(!dbUser) redirect('/auth-callback?origin=dashboard')
-  if(!dbUser) redirect('/dashboard')
+  if(!dbUser) redirect('/auth-callback?origin=dashboard')
+  // if(!dbUser) redirect('/dashboard')
 
   return (
     <div className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
