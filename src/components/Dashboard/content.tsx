@@ -10,12 +10,12 @@ export default function DashContent() {
           <div className="border shadow-sm rounded-lg">
             <Card>
               <CardHeader className="pb-4">
-                <CardTitle>Top Songs</CardTitle>
-                <CardDescription>Discover the best songs of the week.</CardDescription>
+                <CardTitle></CardTitle>
+                <CardDescription></CardDescription>
               </CardHeader>
               <CardContent>
                 <Button className="w-full" size="sm">
-                  Browse
+                  
                 </Button>
               </CardContent>
             </Card>

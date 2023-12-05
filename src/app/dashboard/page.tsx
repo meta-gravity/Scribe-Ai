@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem, DropdownMenuContent, DropdownMenu } from "@/components/ui/dropdown-menu"
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Calculator } from 'lucide-react'
+import { Calculator, HomeIcon, StarsIcon } from 'lucide-react'
 import Image from 'next/image'
 import DashContent from '@/components/Dashboard/content'
 
@@ -45,15 +45,15 @@ const Page = async () => {
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
                 href="#"
               >
-                <Calculator className="h-4 w-4" />
+                <HomeIcon className="h-4 w-4" />
                 Home
               </Link>
               <Link
-                className="flex items-center gap-3 rounded-lg bg-gray-100 px-3 py-2 text-gray-900  transition-all hover:text-gray-900 dark:bg-gray-800 dark:text-gray-50 dark:hover:text-gray-50"
+                className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-gray-900 dark:bg-gray-400 dark:text-gray-50"
                 href="#"
               >
-                <Calculator className="h-4 w-4" />
-                Music Player
+                <StarsIcon className="h-4 w-4" />
+                Generate
               </Link>
               <Link
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
