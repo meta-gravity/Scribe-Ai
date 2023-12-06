@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="flex flex-col items-center space-y-8 bg-white">
-      <h1 className="text-4xl font-bold text-center text-gray-800">Pricing</h1>
+    <div className="flex flex-col items-center space-y-8 max-w md:col-span-1">
+      <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-300 mt-8">Pricing</h1>
       <div className="flex justify-around w-full">
-        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 bg-white rounded-xl shadow-lg">
+        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 rounded-xl shadow-lg">
           <CardHeader>
             <CardTitle className="text-lg font-bold">Basic Plan</CardTitle>
           </CardHeader>
@@ -27,7 +27,7 @@ export default function Component() {
             <Button className="transition-transform duration-500 ease-in-out hover:scale-105">Get Started</Button>
           </CardFooter>
         </Card>
-        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 bg-white rounded-xl shadow-lg">
+        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 rounded-xl shadow-lg">
           <CardHeader>
             <CardTitle className="text-lg font-bold">Premium Plan</CardTitle>
           </CardHeader>
@@ -44,7 +44,7 @@ export default function Component() {
             <Button className="transition-transform duration-500 ease-in-out hover:scale-105">Get Started</Button>
           </CardFooter>
         </Card>
-        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 bg-white rounded-xl shadow-lg">
+        <Card className="m-2 flex-1 transform hover:scale-95 transition-all duration-500 rounded-xl shadow-lg">
           <CardHeader>
             <CardTitle className="text-lg font-bold">Teams Plan</CardTitle>
           </CardHeader>
