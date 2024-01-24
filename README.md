@@ -82,13 +82,13 @@ yarn dev
 <table style="border:1px solid #404040;text-align:center;width:100%">
 <tr><td style="width:14.29%;border:1px solid #404040;">
         <a href="https://github.com/meta-gravity" spellcheck="false">
-          <img src="https://avatars.githubusercontent.com/u/108740247?v=4?s=100" width="100px;" alt="meta-gravity"/>
+          <img src="https://avatars.githubusercontent.com/u/108740247?v=4?s=80" width="100px;" alt="meta-gravity"/>
           <br />
           <b>meta-gravity</b>
         </a>
         <br />
         <a href="https://github.com/meta-gravity/Scribe-Ai/commits?author=meta-gravity" title="Contributions" spellcheck="false">
-          90 contributions
+          98 contributions
         </a>
       </td></table>
 
