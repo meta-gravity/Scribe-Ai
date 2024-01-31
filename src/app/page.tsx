@@ -14,6 +14,7 @@ import Footer from '@/components/footer'
 import { ToastAction } from '@/components/ui/toast'
 import { toast } from '@/components/ui/use-toast'
 import { ButtonToast1 } from '@/components/ButtonToastWait'
+import Navbar from '@/components/Navbar'
 
 // import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
@@ -29,6 +30,7 @@ export default function App() {
     <
     // ref={targetRef}
     >
+      <Navbar />
       <MaxWidthWrapper className='mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center'>
           <div className='
           mx-auto mb-6 dark:bg-black dark:border-purple-900/30 hover:shadow-xl 

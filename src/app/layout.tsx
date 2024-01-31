@@ -40,7 +40,7 @@ export default function RootLayout({
             >
             
           
-              <Navbar />
+              {/* <Navbar /> */}
               {children}
               <Loglib
                   config={{
