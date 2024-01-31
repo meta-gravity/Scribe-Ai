@@ -60,9 +60,11 @@ export default function App() {
           <span className="kui-spotlight absolute right-[5px] top-2/4"></span>
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
             <div className='flex mt-6 items-center justify-center space-x-4'>
-              <Button className="bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50 hover:scale-25">
-                <Wand2Icon className='h-4 w-4 '/> Join Waitlist
-              </Button>
+              <Link href="/waitlist">
+                <Button className="bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50 hover:scale-25">
+                  <Wand2Icon className='h-4 w-4 '/> Join Waitlist
+                </Button>
+              </Link>
             </div>
 
         
