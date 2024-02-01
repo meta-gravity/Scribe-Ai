@@ -17,7 +17,7 @@ export default function Page() {
 
                 <CardDescription>
                  Wanted to code something and here it is.....
-                 This project started as a simple idea - to create an AI that could help with writing tasks. It was a challenging journey, filled with countless hours of coding, debugging, and testing. But the result was worth it. Scribe AI is now a reality, and it&aploss ready to assist you in your writing endeavors.
+                 This project started as a simple idea - to create an AI that could help with writing tasks. Still making it better daily. This is filled with countless hours of coding, debugging, and testing. But the result was worth it. Scribe AI is now a reality, and it&aploss ready to assist you in your writing endeavors.
                 </CardDescription>
                 <p className="text-gray-400 dark:text-gray-600 text-sm"><MetaIcon />|<span className='text-[12px] text-gray-400 dark:text-gray-700'> 4th of December</span> </p>
             </CardContent>
