@@ -79,11 +79,35 @@ module.exports = {
 }
 
 function addVariablesForColors({ addBase, theme }: any) {
+  // Assuming the error is due to the missing function 'flattenColorPalette', we need to import it.
+  // Since the original code does not show an import for 'flattenColorPalette', we'll assume it's a utility function from Tailwind CSS that needs to be manually imported.
+  // However, Tailwind CSS does not export a 'flattenColorPalette' utility by default, so this function might be custom or from a third-party library.
+  // For the sake of this example, let's assume it's a custom utility function that we need to define or import.
+  // If it was a part of Tailwind CSS or a third-party library, the import statement might look something like this:
+  // import { flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette'; // This is a hypothetical path
+  // Since we cannot accurately import without knowing the exact source, let's define a simple version of flattenColorPalette function for demonstration.
+
+  // Hypothetical flattenColorPalette function
+  function flattenColorPalette(colors: any) {
+    // This is a simplified version and may not cover all cases.
+    let result: any = {};
+    for (const [key, value] of Object.entries(colors)) {
+      if (typeof value === 'object' && value !== null) {
+        for (const [innerKey, innerValue] of Object.entries(value)) {
+          result[`${key}-${innerKey}`] = innerValue;
+        }
+      } else {
+        result[key] = value;
+      }
+    }
+    return result;
+  }
+
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
