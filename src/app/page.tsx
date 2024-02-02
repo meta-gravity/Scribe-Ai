@@ -15,6 +15,7 @@ import { ToastAction } from '@/components/ui/toast'
 import { toast } from '@/components/ui/use-toast'
 import { ButtonToast1 } from '@/components/ButtonToastWait'
 import Navbar from '@/components/Navbar'
+import WaitlistBtn from '@/components/Animations/joinwaitlist' 
 
 // import { BentoDemo } from '@/components/magicui/bento-grid'
 // import { useScroll } from "framer-motion"
@@ -63,9 +64,7 @@ export default function App() {
           {/* <span className="kui-spotlight absolute right-[-250px] top-1/4 z-10"></span> */}
             <div className='flex mt-6 items-center justify-center space-x-4'>
               <Link href="/waitlist">
-                <Button className="bg-gradient-to-b from-violet-950 to-indigo-900 rounded-lg border border-white border-opacity-50 hover:scale-25">
-                  <Wand2Icon className='h-4 w-4 '/> Join Waitlist
-                </Button>
+                <WaitlistBtn />
               </Link>
             </div>
 

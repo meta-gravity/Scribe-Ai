@@ -10,6 +10,7 @@ import { GeistSans,
 
 } from 'geist/font/sans'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({
               {/* <Navbar /> */}
               {children}
               <Analytics />
+              <SpeedInsights/>
               <Loglib
                   config={{
                     id: "scribe-ai_vercel",
