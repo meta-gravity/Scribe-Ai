@@ -12,45 +12,19 @@ import {
   } from "@/components/ui/card"
   import { Badge } from "@/components/ui/badge"
 
+  //Images for features cards 
+  import Image from 'next/image'
+  import begins from '../../../public/begins.jpeg'
+  import nd from '../../../public/nd.jpg'
+  import holeg from '../../../public/holeg.png'
+
+
 //   import { render } from "react-dom";
   import React, { useState, useEffect, useRef } from "react";
   
 
 export default function Cards() {
     return (
-        // <MaxWidthWrapper>
-        //     <div className='space-x-10 flex'>
-        //         <div className="m-12 p-6 flex">
-                   
-        //             <Card className="flex-1 flex-col space-y-2 flex p-6 m-2 justify-center">
-        //                 <CardHeader className="flex text-center">
-        //                     <CardTitle className="text-center justify-center">
-        //                         Fast and Efficient 
-        //                         <Badge>AI Powered</Badge>
-        //                     </CardTitle>
-        //                 </CardHeader>
-        //                 <CardContent className="flex m-1 text-center">
-        //                     Generate content quickly and efficiently, saving you time and
-        //                     resources.
-        //                 </CardContent>
-        //             </Card>
-        //             <Card className="flex-col space-y-2 flex p-6 m-2 justify-center">
-        //                 <CardHeader>
-        //                     <CardTitle>
-        //                         Customizable Content 
-        //                         <Badge>AI Powered</Badge>
-        //                     </CardTitle>
-        //                 </CardHeader>
-        //                 <CardContent className="flex m-1 text-center">
-        //                     Customize the output to match your specific needs. Whether you need
-        //                     blog posts, social media updates, or product descriptions, our AI can
-        //                     handle it.
-        //                 </CardContent>
-        //             </Card>
-        //         </div>
-        //     </div>
-        // </MaxWidthWrapper>
-
         <main className="flex mx-auto container py-20 ">
             <section id="features" className="mx-auto px-6 py-12 mt-24 sm-py-24 max-w-5xl md:max-w-6xl relative">
                 <div className="relative rounded-3xl border-t border-slate-600 pt-20 overflow-hidden pb-4 ">
@@ -62,12 +36,12 @@ export default function Cards() {
                     background:conic-gradient(from 90deg at 50% 50%, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 50%), radial-gradient(rgba(200, 200, 200, 0.1) 0%, transparent 80%)"></div>
 
 
-                    <h2 className="mt-4 md:mt-0 font-medium font-effect-hero font-display mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">Features</h2>
+                    <h2 className="mt-4 md:mt-0 font-medium font-effect-hero font-display mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient ">Features</h2>
                     <p className=" mx-auto mb-10 max-w-sm lg:max-w-[34rem] text-center text-xl md:text-[1.125rem] md:leading-[1.5] text-muted-foreground  mt-4 relative z-40">AI-powered, Connect to your workflow seamleasly and more</p>
 
                     <div className="grid grid-cols-3 gap-4 w-full">
 
-                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
+                        <Card className="p-6  hover:bg-white/50 cursor-pointer dark:border-stone-800 border-stone-200 hover:shadow-gray-300/70 hover:shadow-xl shadow-blur ease-in-out delay-100 rounded-xl flex flex-col gap-1 row-span-2 col-span-2
                         pointer-events-none transition duration-300 group-hover:opacity-100 
                         background:radial-gradient(
                             650px circle at 0px 0px,
@@ -75,12 +49,23 @@ export default function Cards() {
                             transparent 50%
                             )
                         ">
+
+                            <div className=" max-w-6xl px-6 lg:px-4 p-2 m-2 space-x-1 space-between">
+                                <div className="m-2 rounded-3xl">
+                                <Image
+                                    src={begins}
+                                    alt="me in this working"
+                                    quality={100}
+                                    loading='lazy'
+                                    className='rounded-lg ' />                 
+                                </div>
+                            </div>
                            
 
                             <CardHeader>
-                                <CardTitle>
+                                <CardTitle className="space-x-2">
                                     <span className="font-bold text-xl">Quality Content</span>
-                                    <Badge className="text-center">AI Powered</Badge>
+                                    <Badge className="text-center hover:bg-red-400">AI Powered</Badge>
                                 </CardTitle>
                             </CardHeader>
 
@@ -91,17 +76,29 @@ export default function Cards() {
                         </Card>
 
 
-                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1
+                        <Card className="p-6 dark:border-stone-800 border-stone-200 hover:shadow-gray-300/70 hover:shadow-xl shadow-blur ease-in-out delay-100 rounded-xl flex flex-col gap-1
                         pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
                             transparent 50%
                             )">
+
+                            <div className=" max-w-6xl px-6 lg:px-4 p-2 m-2 space-x-1 space-between">
+                                <div className="m-2 rounded-3xl">
+                                <Image
+                                    src={nd}
+                                    alt="me in this working"
+                                    quality={100}
+                                    loading='lazy'
+                                    className='rounded-lg ' />                 
+                                </div>
+                            </div>
+
                             <CardHeader>
-                                <CardTitle>
+                                <CardTitle className="space-x-2">
                                     <span className="font-bold text-xl">Fast and Efficient</span>
                                     <Badge className="text-center">AI Powered</Badge>
-                                </CardTitle>
+                                </CardTitle >
                             </CardHeader>
 
                             <CardContent className="flex m-1 text-center">
@@ -111,18 +108,31 @@ export default function Cards() {
                         </Card>
 
 
-                        <Card className="p-6 border-stone-800 rounded-xl flex flex-col gap-1
+                        <Card className="p-6 dark:border-stone-800 border-stone-200 hover:shadow-gray-300/70 hover:shadow-xl shadow-blur ease-in-out delay-100 rounded-xl flex flex-col gap-1
                         pointer-events-none transition duration-300 group-hover:opacity-100 background:radial-gradient(
                             650px circle at 0px 0px,
                             rgba(200, 200, 200, 0.1),
                             transparent 50%
                             )
                         ">
+                            {/* <div className=" max-w-6xl px-6 lg:px-4 p-2 m-2 space-x-1 space-between">
+                                <div className="m-2 rounded-3xl">
+                                <Image
+                                    src={holeg}
+                                    height={50}
+                                    width={50}
+                                    alt="me in this working"
+                                    quality={100}
+                                    loading='lazy'
+                                    className='rounded-lg ' />                 
+                                </div>
+                            </div> */}
+
                             <CardHeader>
-                                <CardTitle>
+                                <CardTitle className="space-x-2">
                                     <span className="font-bold text-xl">Quality Content</span>
                                     <Badge className="text-center">AI Powered</Badge>
-                                </CardTitle>
+                                </CardTitle >
                             </CardHeader>
 
                             <CardContent className="flex m-1 text-center">
